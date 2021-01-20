@@ -1,0 +1,5 @@
+M5        [ Spindle Off         
+G53Z0     [ Raise Head
+G43 Z H1  [ Turn Tool Offset On
+G54       [ Set WINCNC To Use Center Head
+L20       [ Soft Limits On

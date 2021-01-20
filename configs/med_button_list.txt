@@ -1,0 +1,15 @@
+Knife
+Laser 
+Spindle
+Mister
+Calc
+SightCNC
+Clear Zeros
+Go 2 X0Y0
+Safe Z
+P1
+P2
+P3
+H1 
+H2 
+H3

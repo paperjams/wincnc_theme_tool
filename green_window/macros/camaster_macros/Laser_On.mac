@@ -1,0 +1,3 @@
+M5        [ Spindle Off
+G53Z0     [ Raise Head 
+M11C2     [ Output Channel On Laser On

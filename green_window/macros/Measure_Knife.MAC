@@ -1,0 +1,8 @@
+M5                  [ Spindle Off
+G53Z0               [ Raise To Z Home
+M11C33              [ Knife Mode On
+M12C31c32           [ Route Mode and Engraver Mode Off
+G56                 [ Set WINCNC To Use Knife Head
+M11C18               [ Lower X2 Solenoid
+L21                 [ Soft Limits Off
+G5 T0 M"TURN KNIFE OSCILLATION ON. BRING KNIFE BLADE DOWN UNTIL IT TOUCHES SPOIL BOARD, THEN PRESS SET KNIFE BUTTON"

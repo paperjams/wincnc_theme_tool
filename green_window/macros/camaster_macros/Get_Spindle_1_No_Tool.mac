@@ -1,0 +1,6 @@
+M5    [Turn Off Routers
+G49   [Turn Off Tool Measures
+G53Z0 [Raise Z
+M40   [Retract Left Head
+M50   [Retract Right Head
+G54   [Set WINCNC To Use Main Head

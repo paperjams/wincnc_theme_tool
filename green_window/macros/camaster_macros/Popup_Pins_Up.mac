@@ -1,0 +1,3 @@
+C17.2 C1                       [ Is Spindle Off?
+M99                            [ Abort If Spindle On
+M11C12                         [ Pop Up Pins Up

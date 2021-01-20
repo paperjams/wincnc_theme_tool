@@ -1,0 +1,8 @@
+M5           [ Spindle Off
+M12C18    [ Raise Knife
+G28Z         [ Home Z Axis
+G28X         [ Home X Axis
+G28Y         [ Home Y and Y2 Axis
+G28B         [ Home Knife     
+L20          [ Enable Soft Limits
+G90          [ Relative Mode

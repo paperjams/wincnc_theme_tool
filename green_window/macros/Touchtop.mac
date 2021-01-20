@@ -1,0 +1,9 @@
+M12C6                          [ Knife UP
+M5                             [ Spindle Off
+L210Z                          [ Select Alternate Low Limits 
+G53 Z0                         [ Raise Head
+L91 G1 Z-1000 M28 G31 F{TMF}   [ Measure Tool
+L90 G92 Z0.503                 [ Thickness Of Touchtop
+L92                            [ Cancel G92 Restore
+G53 Z0                         [ Raise Head
+L212                           [ Primary Limit

@@ -1,0 +1,8 @@
+M5        [ Spindle Off
+G53Z0     [ Raise Head 
+G56       [ Set WINCNC To Use Left Head
+M11C32    [ Engraver Mode On
+M12C31    [ Route Mode
+G53X5Y5   [ Move To Absolute Value
+G5 t0 M"MAKE SURE THERE IS NO BIT IN SPINDLE AS WELL MAKE SURE LIGHT IS ON SWITCH ON SIDE OF CONTROL BOX. PRESS ENTER WHEN READY TO CONTINUE"
+   

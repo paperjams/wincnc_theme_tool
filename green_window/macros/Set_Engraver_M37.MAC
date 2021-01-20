@@ -1,0 +1,21 @@
+M5                             [ Spindle Off Macro
+G90                            [ Absoulute Mode
+L21                            [ Soft Limits Off
+G56                            [ Set To Use Laser Head
+M11C32                         [ Engraver Mode On
+M12c31c33                      [ Route Mode and Knife Mode Off
+G53Z                           [ Raise Head
+M11C5                          [ Lower Engraver
+L210Z                          [ Select Alternate Low Limits 
+G53 X-4.700 y1.428        [ Go To Tool Swicth Postion
+L91 G0 Z{tmd}                  [ Rapid Distance For Tool Measure 
+L91 G1 Z-1000 M28 F20 G31      [ Measure Tool
+M37z{tm1-.125} H4              [ Record Measure Measurement
+G53Z                           [ Raise Head
+M12C5                          [ Raise Engraver Head
+L212                           [ Select Primary Limits
+L20                            [ Soft Limits On
+G53X0                          [ Move to Soft Limit
+G54                            [ Set WINCNC To Use Center Head
+G5 t0 m"To use laser, Click Laser Mode or command T40"
+

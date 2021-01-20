@@ -1,0 +1,15 @@
+M5                  [ Spindle Off
+G53Z0               [ Raise Head 
+M11C31              [ Route Mode On
+M12c32c33           [ Engraver Mode and Knife Mode Off 
+M12C18              [ Retract Laser Head
+M12C18              [ Retract Knife Head
+G4X1                [ PAUSE 1 SECONDS TO LET KNIFE CLEAR
+L113 L-10 H0 V{AP1} [ Check To See If Axis Is In Range
+L90 Y0              [ One Time Absolute Move
+L113 L-10 H0 V{AP0} [ Check To See If Axis Is In Range
+L90 X0              [ One Time Absolute Move
+G54                 [ Set WINCNC To Use Center Head
+m18.1c3             [ Run Next If Input Is Off
+G49Z                [ Cancel Tool Offset
+G43 Z H1            [ Turn Tool Offset On

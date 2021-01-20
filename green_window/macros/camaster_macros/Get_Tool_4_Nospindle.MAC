@@ -1,0 +1,10 @@
+M5            [ Spindle Off
+G53Z0         [ Raise Head
+M11C32        [ Engraver Mode On
+M12C30C31     [ Route Mode and Knife Mode Off
+G55           [ Set WINCNC To Use Laser Head
+G5 T0 M"Check for tool in spindle. Remove if installed. Then press OK."
+G43 Z H4      [ Turn Tool Offset On
+G5 t0 M"MAKE SURE LIGHT IS ON SWITCH ON SIDE OF CONTROL BOX"
+L92           [ Cancel G92 Restore
+L20           [ Soft Limits On

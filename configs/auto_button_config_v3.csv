@@ -1,0 +1,94 @@
+|||||
+[ image name display_1 is special and only used when no image is needed.|||Display Value.  Colors = Main Box Text||
+dro |Display|Position|||
+saved_positions |Display|StoredPosition|||
+table_display |Display|Viewer|8708047||
+cmd_box |Display|Command|||
+display_1|Display|Title|WinCNC Stinger II ||
+display_2|Display|Colors|3815221|10921555|65420
+display_3|Display|Borders|0||
+display_4|Display|Main Window|-5||
+|||||
+|||||
+|||||
+' LAYER NAME||CHANNEL| AUXON|AUX OFF|
+Drives_Enabled |AuxOutEx|4|my_drives_enable.mac|my_drives_disable.mac|
+Engrave_Mode |AuxOutEx|11|Engraver_Left.MAC||
+Knife_Mode |AuxOutEx|12|Knife_Mode.mac||
+Measure_Knife |AuxOutEx|18|Measure_Knife.mac|Set_Knife.mac|
+Knife |AuxOutEx|7|Osc_On.mac|Osc_Off.MAC|
+Laser |AuxOutEx|2|Laser_On.mac|Laser_Off.mac|
+Mister |AuxOutEx|3|Mister_on.mac|Mister_off.mac|
+Spindle |AuxOutEx|1|my_spindle_on.mac|my_spindle_off.mac|
+|||||
+|||||
+|||||
+' LAYER NAME||MENU BUTTON INDEX|||
+File_Open |MenuBtn|2|||
+File_Restart |MenuBtn|6|||
+History|MenuBtn|7|||
+|||||
+' LAYER NAME||PROGRAM TO RUN|||
+Calc |ShellCmdBtnEx|calc.exe|||
+SightCNC |ShellCmdBtnEx|C:\sightcnc\sightcnc.exe|||
+|||||
+|||||
+' LAYER NAME||MACRO_ON|Macro OFF||
+Auto_XY |UserBtnEx|my_auto_xy.mac|||
+Auto_Z |UserBtnEx|Touchtop.mac|||
+Initialize |UserBtnEx|Initialize.mac|||
+Laser_X0Y0 |UserBtnEx|Laser_Zero.mac|||
+Measure_Engraver |UserBtnEx|Set_Engraver_M37.MAC|||
+Measure_Tool |UserBtnEx|Measure_Current_Auto.mac|||
+Route_Mode |UserBtnEx|Get_Tool_1_Nospindle.mac|||
+Warm_Up |UserBtnEx|Warmup.mac|||
+Zero_Engraver |UserBtnEx|Set_Engraver_G92.mac|||
+Zero_XY |UserBtnEx|my_zero_xy.mac|||
+Zero_Z |UserBtnEx|my_zero_z.mac|||
+Clear_Zeros |UserBtnEx|my_clear_zeros.mac|||
+Go_2_X0Y0 |UserBtnEx|Go_Home.mac|||
+H1 |UserBtnEx|my_h1.mac|||
+H2 |UserBtnEx|my_h2.mac|||
+H3 |UserBtnEx|my_h3.mac|||
+P1 |UserBtnEx|my_p1.mac|||
+P2 |UserBtnEx|my_p2.mac|||
+P3 |UserBtnEx|my_p3.mac|||
+Safe_Z |UserBtnEx|my_safe_z.mac|||
+|||||
+' LAYER NAME||JOB CONTROL FUNCTION|||
+start |JobCmdEx|2|||
+abort |JobCmdEx|1|||
+|||||
+|||||
+' LAYER NAME||CHANNEL|COLOR||
+E-STOP |AuxIn|1|1||
+Probe |AuxIn|9|4||
+M ENABLED |AuxIn|8|1||
+|||||
+|||||
+|||||
+' LAYER NAME||These values get translated |||
+_001 |JogModeEx|0.001|||
+_01 |JogModeEx|0.01|||
+_1 |JogModeEx|0.1|||
+1|JogModeEx|1|||
+Fast |JogModeEx|fast|||
+Med |JogModeEx|med|||
+Slow |JogModeEx|slow|||
+|||||
+|||||
+|||||
+' LAYER NAME||SLIDER TYPE|||
+slider_spindle |SlideControl|0|||
+slider_laser |SlideControl|2|||
+|||||
+|||||
+' LAYER NAME||AXIS INDEX|DIRECTION||
+B_down |AxisControlEx|3|0||
+B_up |AxisControlEx|3|1||
+X_left |AxisControlEx|0|0||
+X_right |AxisControlEx|0|1||
+Y_down |AxisControlEx|1|0||
+Y_up |AxisControlEx|1|1||
+Z_down |AxisControlEx|2|0||
+Z_up |AxisControlEx|2|1||

@@ -1,0 +1,3 @@
+M5        [ Spindle Off
+M12C4     [ Turn Dives Off
+L212      [ Select Primary Limits

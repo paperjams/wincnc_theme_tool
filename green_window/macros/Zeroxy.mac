@@ -1,0 +1,2 @@
+G92 X0 Y0    [ Set Local Zero
+L92          [ Remember G92 Setting After Exiting Macro

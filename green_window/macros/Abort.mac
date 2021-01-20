@@ -1,0 +1,7 @@
+[8/17/20]
+M12C1C5C6C7   [ Turn Off Spindle, X2 and X3 Solenoid, Knife Osc 
+g4x.05        [ Wait Signal
+L212          [ Select Primary Limits
+L20           [ Soft Limits On
+M17.1D0C2     [ Check Input For Estop Signal
+m12c4         [ If E-Stop Is Triggered Turn Drives Off

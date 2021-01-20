@@ -1,0 +1,10 @@
+M98 C:\WINCNC\MACROS\Initialize.mac
+S12000          [ Sets 1st RPM {18k spindle 9000, 24k Spindle 12000}
+M3              [ Spindle On
+G4x120          [ Run For 2 Minutes
+S18000          [ Sets 2nd RPM {18k spindle 12000, 24k Spindle 18000}
+G4x120          [ Run For 2 Minutes          
+S24000          [ Sets 3rd RPM {18k spindle 18000, 24k Spindle 24000}
+G4x60           [ Run For 1 Minute
+M5              [ Spindle Off
+G5 T0 M"Machine is Ready!!!

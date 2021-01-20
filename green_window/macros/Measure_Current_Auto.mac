@@ -1,0 +1,9 @@
+M12C18C7                        [ X2 and X3 Solenoid Up
+L21                            [ Soft Limits Off
+L210Z                          [ Select Alternate Low Limits
+G53 Z0                         [ Raise Head
+L91 G1 Z-1000 M28 G31 F20      [ Measure Tool
+M37 Z0.50 H1                   [ Thickness Of Touchtop
+G53 Z0                         [ Raise Head
+L212                           [ Primary Limit
+L20                            [ Soft Limits On

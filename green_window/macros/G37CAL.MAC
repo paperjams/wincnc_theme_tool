@@ -1,0 +1,21 @@
+M5                             [ Spindle Off
+G5 T2 M"Jog Bit To Table Before Running This Program. This Should only be done after surfacing the Spoil board"
+G5 T2 M"You are about to change the tool measure switch height. Are you sure you want to calibrate the height of the switch to the table top?"
+M12C5,C6                       [ Raise X2 and X3
+L21                            [ Soft Limits Off
+L210Z                          [ Select Alternate Low Limits 
+L92                            [ Cancel G92 Restore
+G92                            [ Restore Machine Cordinates
+M37 Z0 H{tp1}                  [ Set Tool Length Offsets
+G53 Z0                         [ Raise Head
+G53 X5 Y5                      [ Move To Absolute Value
+G5 T0 M"Move the Dust Boot out of the Way."
+G53 X{tmx}Y{tmy}               [ Go To Tool Swicth Postion
+L91 G0 Z{tmd}                  [ Rapid Distance For Tool Measure 
+L91 G1 Z-1000 M28 G31 F{TMF}   [ Measure Tool
+M37.1Z                         [ Set New TLMS Cal.
+G53 Z0                         [ Raise Head
+L91 G1 Z0 F50                  [ Set Feedrate For Z
+L212                           [ Primary Limit
+L20                            [ Soft Limits On
+G5 T0 M"Tool Measure Switch calibrated."

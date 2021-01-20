@@ -1,0 +1,6 @@
+G5 T2 M"IS ENGRAVER BODY TOUCHING MATERIAL? YES TO CONTINUE."  
+G92Z-0.125                                           [ Set Laser Zero
+G53Z                                                 [ Raise To Z Home
+M12C5                                                [ Raise Engraver
+L92                                                  [ Cancel G92 Restore
+

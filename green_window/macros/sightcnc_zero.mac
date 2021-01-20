@@ -1,0 +1,5 @@
+[SightCNC Macro File to Position the Head at the Camera Center
+l91x-3.495y5.676
+
+[g92x0y0 [uncomment these two lines to set relative zero at the new point
+[l92     [uncomment this for relative zero

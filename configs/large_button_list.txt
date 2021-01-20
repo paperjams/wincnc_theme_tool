@@ -1,0 +1,20 @@
+Drives Enabled
+Initialize
+Warm Up
+Route Mode
+Engrave Mode
+Knife Mode
+Zero Engraver
+Zero XY
+Zero Z
+Auto XY
+Auto Z
+Laser X0Y0
+Measure Tool
+Measure Knife
+Measure Engraver
+Touch Plate
+Probe
+File Open
+File Restart
+History

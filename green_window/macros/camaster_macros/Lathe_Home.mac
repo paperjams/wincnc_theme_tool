@@ -1,0 +1,4 @@
+G53z                           [ Raise Head
+G53x67.532y3.00                [ Rapid Move To Absolute Postion
+G92x0y0                        [ Zero XY
+L92                            [ Cancel G92 Restore

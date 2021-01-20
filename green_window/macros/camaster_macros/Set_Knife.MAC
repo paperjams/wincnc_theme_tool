@@ -1,0 +1,9 @@
+G5 T2 M"If Knife Is Touching Spoil Board Press Enter. If Not Press No." 
+M37Z0H2                                              [ Set H2 Registor
+M11C32                                               [ Engraver Mode On
+M12C31C33                                            [ Route Mode and Knife Mode Off
+G53Z                                                 [ Raise To Z Home
+M12C18                                               [ RAISE KNIFE 
+M5                                                   [ Turn Knife Off
+M98 C:/Wincnc/Macros/Get_Tool_1_Nospindle.mac        [ Return to G54
+G5 t0 M"To Use Knife, Press Knife Mode or Command T30"

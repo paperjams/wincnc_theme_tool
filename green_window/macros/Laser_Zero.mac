@@ -1,0 +1,5 @@
+G53                     [ Raise Head
+L91 X-2.742 Y-1.269     [ Laser Offset Cordinate
+G92 X0Y0                [ Zero XY
+L92                     [ Cancel G92 Restore
+M12C2                   [ Output Channel On Laser Off

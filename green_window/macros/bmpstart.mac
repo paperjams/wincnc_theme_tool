@@ -1,0 +1,6 @@
+G53Z0
+G0X0Y0
+F100XY
+G5.1 A1 R0 M"Input Desired Feed Rate For XY Axes between 1-150"
+F{GR0}XY
+G0Z0

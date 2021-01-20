@@ -1,0 +1,11 @@
+M5                  [ Spindle Off
+L31                 [ Knife Mode Off
+M11C33              [ Knife Mode
+M12C31C32           [ Route Mode and Engraver Mode Off
+G53Z0               [ Raise To Z Home
+G5 T0 M"Check for tool in spindle. Remove if installed. Click OK when ready to continue." 
+G43 Z H2            [ Set H2 Register
+G56                 [ Set WINCNC To Use Knife
+M11C18
+M3.2                [ Oscillation On
+L20                 [ Soft Limits On

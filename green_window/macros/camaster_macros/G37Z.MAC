@@ -1,0 +1,19 @@
+G53Z                           [ Raise Head
+M5                             [ Spindle Off
+G53X5Y5                        [ Move To Absolute Value
+G5 T0 M"MOVE DUST BOOT OUT OF THE WAY"
+G54                            [ Set WINCNC To Use Center Head
+L21                            [ Soft Limits Off
+L210Z                          [ Select Alternate Low Limits  
+G53 Z0                         [ Raise Head                                               
+G53 X{tmx}Y{tmy}               [ Go To Tool Swicth Postion
+L91 G0 Z{tmd}                  [ Rapid Distance For Tool Measure 
+L91 G1 Z-1000 M28 G31 F{TMF}   [ Measure Tool
+M37 Z{tm1} H1                  [ Store Measure In H Registry
+G53 Z0                         [ Raise Head
+L91 G1 Z0 F50                  [ Set Feedrate For Z
+L212                           [ Primary Limit
+G0                             [ Rapid Mode   
+G53X5Y5                        [ Move To Absolute Value
+g5 T0 M"POSITION DUSTBOOT"
+L20                            [ Soft Limits On

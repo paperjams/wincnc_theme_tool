@@ -1,0 +1,5 @@
+M5           [ Spindle Off
+M12c18       [Raise Knife
+G53 Z0       [ Raise Head
+G53 X0 Y0    [ Park Front Left
+L20          [ Soft Limits On 

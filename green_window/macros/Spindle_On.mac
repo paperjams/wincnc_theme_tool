@@ -1,0 +1,3 @@
+L20                            [ Soft Limits On
+M11C1                        [ Spindle On                        
+G4x3                           [ Pause For Spindle Speed
